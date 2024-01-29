@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <title>Color Palette Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Color Palette Generator</h1>
+    </header>
+    
+    <main>
+        <section id="image-upload">
+            <h2>Upload Image</h2>
+            <input type="file" id="image-input" accept="image/*">
+            <button type="submit">Generate Palette</button>
+        </section>
+
+        <section id="color-palette">
+            <h2>Color Palette</h2>
+            <div class="color" style="background-color: #e74c3c;"></div>
+            <div class="color" style="background-color: #3498db;"></div>
+            <div class="color" style="background-color: #2ecc71;"></div>
+            <div class="color" style="background-color: #f39c12;"></div>
+            <div class="color" style="background-color: #9b59b6;"></div>
+        </section>
+    </main>
+</body>
+</html>
