@@ -12,6 +12,7 @@ def home():
 @app.route("/generate_palette", methods=['POST'])
 def generate_palette():
     pass
+    #TODO
 
 
 if __name__ == "__main__":
