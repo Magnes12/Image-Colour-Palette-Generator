@@ -39,7 +39,7 @@ def upload():
 
     palette = generate_palette(temp_path)
     os.remove(temp_path)
-    return render_template('result.html', palette=palette)
+    return render_template('index.html', palette=palette)
 
 
 if __name__ == "__main__":

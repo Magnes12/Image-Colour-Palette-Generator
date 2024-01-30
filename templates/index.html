@@ -19,6 +19,18 @@
                 <button type="submit">Generate Palette</button>
             </section>
         </form>
+        {% if palette %}
+        <section id="color-palette">
+            <h2>Color Palette</h2>
+            <ul>
+                {% for color in palette %}
+                    <li style="background-color: rgb({{ color[0] }}, {{ color[1] }}, {{ color[2] }});"></li>
+                    <div class="color-box"></div>
+                    <span class="rgb-values">{{ color[0] }}, {{ color[1] }}, {{ color[2] }}</span>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
     </main>
 </body>
 </html>
